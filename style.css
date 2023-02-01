@@ -1,0 +1,171 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 30px 10%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  padding:20px 0;
+  line-height: 50px; 
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.submenu{
+  min-width: 700px;
+  width:70% ;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+
+
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.brand-logo {
+  font-family: 'Lexend';
+  font-size: 40px; 
+  padding-left: 0;
+}
+
+
+
+.topnav .icon {
+  display: none;
+}
+.desktop{
+  display: block;
+}
+.mobile{
+  display: none;
+}
+.hero-img{
+  width: 75%;
+}
+
+
+a.social-icons {
+  width:48px ;
+  height:48px;
+  border-radius: 50%;
+  background: white;
+  padding: 10px;
+  
+}
+.iconmenu{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+
+.primary-CTA{
+  height: 60px;
+  padding: 20px;
+  background: #D9D9D9;
+  border: 2px solid #D9D9D9;
+  border-radius: 12px;
+  
+
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.box {
+  height: 450px;
+  position: relative;
+ 
+
+
+}
+
+.content {
+  position: absolute;
+  bottom: 0px;
+  width: 584px;
+  height: 152px;
+  left: 120px;
+top: 519px;
+  
+}
+
+.hero{
+  width: 100%;
+  font-family: 'Lexend';
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+.right-hero{
+  width: 50%;
+}
+.right-hero img{
+  max-width: 100%;
+}
+.left-hero .primary-CTA
+{
+  width: 180px;
+  margin-top: 35px;
+  height: 50px;
+  padding: 10px 0;
+}
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  .topnav {
+    padding: 20px;
+  }
+  .submenu{
+    display: none;
+  }
+  .column{
+    width: 100% !important;
+    padding: 0 25px;
+  }
+  .desktop{
+    display: none;
+  }
+  .mobile{
+    display: block;
+  }
+  .hero-img{
+    width: 50%;
+    position: absolute;
+    right: 0;
+  }
+  
+}
+
